@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+    <style>    body {
+    background-color:blanchedalmond;}  
+ </style> 
+   
+<div ng-app="myApp" ng-controller="myCtrl">
+<center>
+ <h1 style="background-color:DodgerBlue;">Basic form!</h1>
+First Name: <input type="text"  ng-model="firstName"><br>
+<br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+Email : <input type="email" ng-model="email"><br>
+Full Name: {{firstName + " " + lastName}}<br>
+Email-Id:{{email}}
+</center>
+</div>
+
+<script>
+
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.firstName = "";
+    $scope.lastName = "";
+    $scope.email = "";
+});
+</script>
+
+</body>
+</html>
