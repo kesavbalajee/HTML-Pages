@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inventory Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: right;
+            font-size: 35px;
+            color: white;
+        }
+        
+        nav {
+            float: left;
+            width: 30%;
+            height: 1500px;
+            background: #ccc;
+            padding: 20px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        
+        .button {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        
+        .button1 {
+            border-radius: 8px;
+        }
+        
+        #chartdiv {
+            width: 100%;
+            height: 500px;
+        }
+        
+        .dropbtn {
+            background-color: #0000FF;
+            color: white;
+            padding: 16px;
+            font-size: 20px;
+            border: none;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 260px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div align="left">
+            Inventory Management
+        </div>
+        <div>
+            Client Name + Company Name
+            <i class="material-icons" style="font-size:36px">person</i>
+        </div>
+
+    </header>
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn">Dashboard</button>
+            <div class="dropdown-content">
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="dropdown">
+            <button class="dropbtn">Registration</button>
+            <div class="dropdown-content">
+                <a href="#">Management</a>
+                <a href="#">Client</a>
+                <a href="#">Customer</a>
+                <a href="#">Catalog</a>
+                <a href="#">Employee</a>
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="dropdown">
+            <button class="dropbtn">Report</button>
+            <div class="dropdown-content">
+                <a href="#">Client</a>
+                <a href="#">Customer</a>
+                <a href="#">Procurement Team</a>
+                <a href="#">Technician On Catalog</a>
+                <a href="#">Management On Technician</a>
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="dropdown">
+            <button class="dropbtn">LookUpBy</button>
+            <div class="dropdown-content">
+                <a href="#">Login Details</a>
+                <a href="#">Client Details</a>
+                <a href="#">Customer Details</a>
+                <a href="#">catalog Details</a>
+                <a href="#">Employee Details</a>
+                <a href="#">Purchase Order</a>
+                <a href="#">Received Order</a>
+                <a href="#">Purchase By Vendor</a>
+                <a href="#">Purchase By Individual Item</a>
+                <a href="#">Payment</a>
+                <a href="#">Vendor Balance</a>
+
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div align="center">
+            <h1> Sales Activity</h1>
+        </div>
+        <button class="button button1">YET TO PACK</button>
+        <button class="button button1">YET TO DELIVER</button>
+        <button class="button button1">PARTIALLY INVOICED</button>
+        <button class="button button1">YET TO INVOICE</button>
+        <button class="button button1">INVOICE STATUS</button>
+        <button class="button button1">TECHNICIAN STATUS ON PRODUCT</button>
+        <button class="button button1">RETURNED DEVICE FOR REPAIR</button>
+        <button class="button button1">SELLED THROUGH OFFERS</button>
+        <br>
+        <br>
+        <hr>
+        <div align="center">
+            <h1> Product Details</h1>
+
+            <p>
+                <h3> Low Stock Indication</h3></p>
+            <meter value="30" min="1" max="100">30 out of 100</meter>
+            <br>
+            <meter value="0.8">80%</meter>
+            <br>
+        </div>
+        <br>
+        <br>
+        <hr>
+
+        <div align="center">
+            <h1>Periodically Selling Products</h1>
+
+            <div align="center">
+                <div align="center" style="width:300px;height:60px;border:1px solid #000;"><b> HP Laptops</b>
+                    <br><b>Redmi Mobiles</b>
+                    <br><b>Boat Hearphones</b></div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <div align="center">
+            <h1>Sales Order Summery</h1>
+            <img src="https://www.iconfinder.com/icons/395093/graph_pie_chart_icon" width="500" height="333">
+        </div>
+
+    </section>
+    <footer>
+        <p>CopyRight © @ 2019 Deva Darshan System</p>
+    </footer>
+
+</body>
+
+</html>
